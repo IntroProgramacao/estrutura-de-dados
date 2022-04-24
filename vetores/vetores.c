@@ -35,6 +35,7 @@ void imprime(int vet[HAY_MAX]){
 }
 int
 main(void){
-
+    //cria o vetor
+    
 
 }
