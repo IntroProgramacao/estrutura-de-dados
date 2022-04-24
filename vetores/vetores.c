@@ -15,11 +15,11 @@ Criar o programa principal que testa as funções*/
 void inicializa(int vetor[HAY_MAX]){
     for (int i = 0; i < HAY_MAX; i++)
     {
-        if (i<=(HAY_MAX/2))
+        if (i<((HAY_MAX/2)))
         {
             vetor[i] = i;
         }else{
-            vetor[i] = i - (HAY_MAX / 2);
+            vetor[i] = HAY_MAX - (i+1);
         }
     }
 }
@@ -29,13 +29,19 @@ void inicializa(int vetor[HAY_MAX]){
 void imprime(int vet[HAY_MAX]){
     for (int i = 0; i < HAY_MAX; i++)
     {
-        printf("Vetor[%i] = %i", i, vet[i]);
+        printf("Vetor[%i] = %i\n", i, vet[i]);
     }
     
 }
 int
 main(void){
     //cria o vetor
-    
+    int vetor[HAY_MAX];
+
+    //inicializa
+    inicializa(vetor);
+
+    //imprime
+    imprime(vetor);
 
 }
