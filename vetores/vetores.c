@@ -1,0 +1,40 @@
+/*1. Vetores
+
+Criar as seguintes funções que manipulam um vetor de inteiros passado em parâmetro:
+- 'inicializar' que inicializa o vetor passado em parâmetro
+- 'imprimir' que imprime os valores do vetor
+- 'palindrome' que verifica se o vetor é um palindroma
+- 'inverter' que inverte os elementos do vetor
+
+Criar o programa principal que testa as funções*/
+
+#include<stdio.h>
+#define HAY_MAX 10
+
+//Inicializa o vetor
+void inicializa(int vetor[HAY_MAX]){
+    for (int i = 0; i < HAY_MAX; i++)
+    {
+        if (i<=(HAY_MAX/2))
+        {
+            vetor[i] = i;
+        }else{
+            vetor[i] = i - (HAY_MAX / 2);
+        }
+    }
+}
+
+
+//Imprime os valores dos vetores
+void imprime(int vet[HAY_MAX]){
+    for (int i = 0; i < HAY_MAX; i++)
+    {
+        printf("Vetor[%i] = %i", i, vet[i]);
+    }
+    
+}
+int
+main(void){
+
+
+}
